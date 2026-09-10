@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Permissão para a base de dados -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+            android:allowBackup="true"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:usesCleartextTraffic="true"
+            android:theme="@style/Theme.Portfolio">
+
+        <!-- 1. Ecrã inicial (LogIn) -->
+        <activity
+                android:name=".LogIn"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 2. Demais ecrãs da aplicação -->
+        <activity
+                android:name=".MainActivity"
+                android:exported="false" />
+
+        <activity
+                android:name=".MainActivity2"
+                android:exported="false" />
+
+        <activity
+                android:name=".MainActivity3"
+                android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2B3E50"
+        tools:context=".LogIn">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <!-- Cabeçalho (Padrão da app) -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp">
+
+                <TextView
+                        android:id="@+id/titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PORT"
+                        android:textSize="32sp"
+                        android:textColor="#8BBBE1"
+                        android:fontFamily="@font/alfa_slab_one" />
+
+                <TextView
+                        android:id="@+id/titulo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="folio"
+                        android:textSize="40sp"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="cursive"
+                        android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <!-- Subtítulo -->
+
+            <!-- Campo Nome de Utilizador -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                <TextView
+                        android:id="@+id/txtUser"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Utilizador:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/editUser"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:background="#3A5168" />
+            </LinearLayout>
+
+            <!-- Campo Email -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="24dp">
+
+                <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/editEmail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:background="#3A5168" />
+            </LinearLayout>
+
+            <!-- Botão Entrar -->
+            <Button
+                    android:id="@+id/btLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Entrar"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#3A6B94"
+                    android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

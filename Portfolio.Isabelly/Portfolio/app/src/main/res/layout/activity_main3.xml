@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2B3E50"
+        tools:context=".MainActivity3">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+            <!-- Cabeçalho (Padrão idêntico aos ecrãs 1 e 2) -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp">
+
+                <TextView
+                        android:id="@+id/titulo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PORT"
+                        android:textSize="32sp"
+                        android:textColor="#8BBBE1"
+                        android:fontFamily="@font/alfa_slab_one" />
+
+                <TextView
+                        android:id="@+id/titulo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="folio"
+                        android:textSize="40sp"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="cursive"
+                        android:layout_marginStart="4dp" />
+            </LinearLayout>
+
+            <!-- Subtítulo -->
+            <TextView
+                    android:id="@+id/subTitulo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Novo Trabalho"
+                    android:textColor="#D1E5F7"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:paddingVertical="10dp"
+                    android:paddingHorizontal="12dp"
+                    android:background="#1E3040"
+                    android:layout_marginBottom="20dp" />
+
+            <!-- Campo Título -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+
+                <TextView
+                        android:id="@+id/txtTitulo"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Título:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/editTitulo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="text"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:background="#3A5168" />
+            </LinearLayout>
+
+            <!-- Campo Descrição -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="top"
+                    android:layout_marginBottom="12dp">
+
+                <TextView
+                        android:id="@+id/txtDiscricao"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Descrição:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/editDiscricao"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:gravity="start|top"
+                        android:minLines="3"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:background="#3A5168" />
+            </LinearLayout>
+
+            <!-- Campo Data -->
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="24dp">
+
+                <TextView
+                        android:id="@+id/txtData"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Data:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                <EditText
+                        android:id="@+id/editDate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="date"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:padding="10dp"
+                        android:background="#3A5168" />
+            </LinearLayout>
+
+            <!-- Botão Inserir -->
+            <Button
+                    android:id="@+id/btInserir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Inserir"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#3A6B94"
+                    android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
